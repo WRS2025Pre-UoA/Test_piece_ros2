@@ -15,16 +15,19 @@
 ```bash
 colcon build
 source install/setup.bash
+```
 
 ## 実行
 
 画像をパブリッシュするノードの実行
 ```bash
 ros2 run crack image_publisher
+```
 
 画像を受信して処理するノードを実行
 ```bash
  ros2 run crack image_subscriber
+```
 
 ## 操作方法
 1.PublisherとSubscriberの両方を起動すると"Input_Images"に含まれている画像を読み込まれ画像が表示されます
