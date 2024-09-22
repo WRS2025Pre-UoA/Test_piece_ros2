@@ -13,7 +13,6 @@
 プロジェクトをビルドするには、次のコマンドを実行してください。
 
 ```bash
-rm -rf build/ install/ log/
 colcon build
 source install/setup.bash
 
@@ -21,17 +20,17 @@ source install/setup.bash
 
 画像をパブリッシュするノードの実行
 ```bash
-ros2 run test_piece_ros2 image_publisher
+ros2 run crack image_publisher
 
 画像を受信して処理するノードを実行
 ```bash
-ros2 run test_piece_ros2 image_subscriber
+ ros2 run crack image_subscriber
 
 ##操作方法
 1.PublisherとSubscriberの両方を起動すると"Input_Images"に含まれている画像を読み込まれ画像が表示されます
 2.アルミの板の角4点を左クリックし、何らかのキーを押します
-3.射影変換された画像をトラックバーを操作し、クラックが検出されるよう画像処理をする。
-4."c"ボタンをクリックすることで処理が終わり、"output_Images"に画像が保存される
+3.射影変換された画像をトラックバーを操作し、クラックが検出されるよう画像処理をしてください
+4."c"ボタンをクリックすることで処理が終わり、"Output_Images"に画像が保存されます
 
 ##注意事項
-・ファイルパスdetect.pyの中身の
+・フォルダのInput_Image、Output_Imageのパスはdetect.py、image_publisher.pyのコードを変えることで変えることができます
