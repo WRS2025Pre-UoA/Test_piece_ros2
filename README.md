@@ -21,12 +21,12 @@ source install/setup.bash
 
 画像をパブリッシュするノードの実行
 ```bash
-ros2 run crack image_publisher
+ros2 run test_piece_ros2 image_publisher
 ```
 
 画像を受信して処理するノードを実行
 ```bash
- ros2 run crack image_subscriber
+ros2 run test_piece_ros2 image_subscriber
 ```
 
 ## 操作方法
@@ -36,4 +36,4 @@ ros2 run crack image_publisher
 4."c"ボタンをクリックすることで処理が終わり、"Output_Images"に画像が保存されます  
 
 ## 注意事項
-・フォルダのInput_Image、Output_Imageのパスはdetect.py、image_publisher.pyのコードを変えることで変えることができます
+・フォルダのInput_Image、Output_Imageのパスはdetect.py、image_publisher.pyのコードから変えることができます
